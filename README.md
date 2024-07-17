@@ -16,7 +16,7 @@ To use this program, you take the old-school approach and type in **text command
 - **KN**: Klingon Number. Stores the **initial** amount of Klingons.
 - **KD**: Klingons Destroyed. Stores the amount of Klingons you've destroyed. (You can find the **current** amount of Klingons on the board by subtracting `kn - kd`)
 - **KH**: Stores the active Klingon's health. (It resets every time you leave and come back to that Klingon; presumably, they fix themselves while you're gone.)
-- **S1, S2, S3... S9**: Sector [number]. Stores the data of the respective sector. (1 means *one Klingon*, 10 means *one starbase*, 11 means *one starbase and one Klingon*, 0 means the sector is empty.)
+- **S1, S2, S3... S9**: Sector [number]. Stores the data of the respective sector. (10 means *one Klingon*, 1 means *one starbase*, 11 means *one starbase and one Klingon*, 0 means the sector is empty.)
 - **ES**: Enterprise (ship) Sector. Stores the ship's current sector as an integer.
 - **CS**: Course. Used only in the **NAV** command. Stores the ship's course as an integer (1 - 4).
 - **WA**: Warp. Used only in the **NAV** command. Stores the ship's warp factor as an integer.
