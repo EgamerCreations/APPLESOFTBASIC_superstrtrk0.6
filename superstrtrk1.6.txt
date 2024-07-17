@@ -306,7 +306,7 @@
 2170 if s9 = 11 or s9 = 10 then print s9
 2200 print "" : print "You are at sector ";
 2210 if int(es) = 1 then print "A-1"
-2220 if int(es) = 2 then print "B-1"
+2220 if int(es) = 2 then print "B-2"
 2230 if int(es) = 3 then print "C-1"
 2240 if int(es) = 4 then print "A-2"
 2250 if int(es) = 5 then print "B-2"
@@ -397,7 +397,7 @@
 5096 print "Docking Ship..."
 5097 if cd = 1 then for i = 1 to 5000
 5098 if cd = 1 then next
-5099 if cd = 1 then print "Ship Docked" : print "Don't forget to redo shields" : let en = me : let sh = 0 : let so = (so+100) : let sw = 1 : let lw = 1 : let mw = 3 : let zc = 0 : let en = me :  gosub 50000
+5099 if cd = 1 then print "Ship Docked" : print "Don't forget to redo shields" : let en = me : let sh = 0 : let so = (so+100) : let sw = 1 : let lw = 1 : let mw = 3 : let zc = 0 : gosub 50000
 5100 goto 200
 
 
@@ -416,10 +416,10 @@
 6135 let zs = sh
 6140 goto 200
 
-6200 if sh < gn then print "We don't have that much energy, Captain!" : goto 200
-6210 let en = (en + gn)
-6220 let sh = (sh - gn)
-6230 print gn;" energy taken from shields."
+6200 if abs(gn) > abs(sh) then print "We don't have that much energy in the shields, Captain!" : goto 200
+6210 let en = (en + abs(gn))
+6220 let sh = (sh - abs(gn))
+6230 print abs(gn);" energy taken from shields."
 6235 let zs = sh
 6240 goto 200
 
