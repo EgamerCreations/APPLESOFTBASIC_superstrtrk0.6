@@ -1,6 +1,7 @@
 # SUPER STR TRK BETA-6
 
 ### A simple text Star-Trek inspired game coded in Applesoft BASIC
+### MORE CAN BE FOUND IN THE [WIKI](https://github.com/EgamerCreations/APPLESOFTBASIC_superstrtrk0.6/wiki "Wiki")
 
 #### WARNING: This game is in *beta*, so there may be bugs and/or missing features. If you notice an issue, please notify me with the "Issues" tab.
 
